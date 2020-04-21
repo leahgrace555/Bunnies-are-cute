@@ -1,9 +1,96 @@
 * {font-family: sans-serif;
 margin: 0px; 0px}
 
-a:visited {
 
+a:hover {
+    color: purple;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: plum;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30pt;
+    align-content: center;
+}
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    font-weight: bolder;
+    width: 40%
+}
+
+
+
+/*
+
+@media screen and (max-width: 768px) {
+    body {overflow:hidden;}
+    .navlinks { 
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        background-color: plum;
+        top: 08vh;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        transform: translatex(100%);
+        transition: transform 0.5s ease-in;
+
+        
+    }
+    .navlinks li {
+        opacity: 0;
+    }
+    .burger {
+        display:block;
+    }
+}
+
+.navactive {
+    transform: translatex(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px)
+
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} */
+
+
+.button {
+    text-align: center;
+}
+
+.quizprompt {
+    text-align: center;
+    padding: 50px;
+    line-height: 40px;
+    font-size: 20pt;
+}
+
+.quizanswer {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+/*
 header {
     background-color: plum;
     color: white;
@@ -32,9 +119,11 @@ nav li {
     margin-top;
     color: gray;
     font-size: 20pt;
+    align-items: center;
+    
 
 }
-
+*/
 
 a {
     
@@ -47,6 +136,9 @@ nav li a:link {
     color: white;
 }
 
+nav li a:hover {
+    color: purple;
+}
  #introphoto {
      text-align: center;
      padding: 40px;

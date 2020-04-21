@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <!-- <h1> Bunnies Are Cute</h1>
+         <nav>
+             <ul>
+                 <li> <a href="index.html" ><em>Home</em></a> </li>
+     
+                 <li> <a href="Galley.html"><em>Gallery</em> </a> </li>
+             </ul>
+         </nav> -->
+     
+         <nav>
+             <div>
+                 <h1 class="logo">☆ Bunnies Are Cute ☆</h1>
+             </div>
+             <ul class="navlinks">
+                 <li>
+                     <a href="index.html"><em>Home</em></a>
+                 </li>
+                 <li>
+                     <a href="Galley.html"><em>Gallery</em></a>
+                 </li>
+                 <li>
+                     <a href="Quiz.html"><em>Take The Quiz</em></a>
+                 </li>
+             </ul>
+         </nav>
+     </header>
+<p class="quizprompt">Click the button to take a short quiz about bunnies!</p>
+<div class="button">
+<button onclick="myFunction()">Take the quiz!</button>
+</div>
+<p id="demo"></p>
+
+<script class="quizanswer">
+function myFunction() {
+  var text;
+  var favDrink = prompt("Do you think bunnies are cute?", "No");
+  switch(favDrink) {
+    case "No":
+      text = " Incorrect. You failed the quiz. That is so sad :(";
+      break;
+    case "no":
+      text = "That is so sad. And you failed the quiz. :(";
+      break;
+    case "yes":
+      text = "Correct! We think so too :) ";
+      break;
+    case "Yes":
+      text = "Correct! We think so too :) ";
+      break;
+    default: 
+    text= 'That is an interesting answer...';
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
