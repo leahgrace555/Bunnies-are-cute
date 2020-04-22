@@ -1,4 +1,6 @@
-var myDate = new Date();
+
+ function sayHello() {
+    var myDate = new Date();
     var hrs = myDate.getHours();
     var greet;
 
@@ -9,4 +11,9 @@ var myDate = new Date();
     else if (hrs >= 17 && hrs <= 24)
         greet = 'Good evening';
 
-    document.write( greet )
+    var response = greet;
+    
+    return response;
+};
+
+document.write( sayHello() )
