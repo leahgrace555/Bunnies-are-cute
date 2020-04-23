@@ -207,3 +207,15 @@ ul {
     list-style-type: none;
 }
 
+#generator {
+    margin: 10px 50px;
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+
+#generator:hover {
+    filter: grayscale(100%);
+    transform: scale(.5);
+}
+
